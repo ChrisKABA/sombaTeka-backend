@@ -14,7 +14,7 @@ export default class User extends compose(BaseModel, AuthFinder) {
   declare id_user: number
 
   @column()
-  declare fullName: string | null
+  declare fullName: string
 
   @column()
   declare image?: string
@@ -26,7 +26,7 @@ export default class User extends compose(BaseModel, AuthFinder) {
   declare password: string
 
   @column()
-  declare sexe: string
+  declare sexe?: string | null
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime

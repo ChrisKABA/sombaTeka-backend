@@ -57,6 +57,7 @@
     "@adonisjs/lucid": "^21.5.1",
     "@adonisjs/session": "^7.5.0",
     "@vinejs/vine": "^3.0.0",
+    "axios": "^1.7.9",
     "luxon": "^3.5.0",
     "pg": "^8.13.1",
     "reflect-metadata": "^0.2.2"
