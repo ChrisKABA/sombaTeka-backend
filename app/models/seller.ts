@@ -9,10 +9,19 @@ export default class Seller extends BaseModel {
   declare description?: string
 
   @column()
+  declare rating: number
+
+  @column()
   declare note_vendeur?: string
 
   @column()
   declare name_boutique?: string
+
+  @column()
+  declare profile_image: string
+
+  @column()
+  declare total_sales: number
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime

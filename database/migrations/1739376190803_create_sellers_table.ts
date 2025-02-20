@@ -9,6 +9,9 @@ export default class extends BaseSchema {
       table.string('description')
       table.string('note_vendeur')
       table.string('name_boutique')
+      table.string('rating')
+      table.string('profile_image')
+      table.string('total_sales')
 
 
       table.foreign('id_seller').references('id_client').inTable('clients').onDelete('CASCADE').onUpdate('CASCADE')
